@@ -60,35 +60,35 @@ class Tile
     @material = input_material
   end
 
-  def set_color= (input_color)
-    @color = input_color
-  end
+  # def set_color= (input_color)
+  #   @color = input_color
+  # end
 
-  def color
-    @color
-  end
+  # def color
+  #   @color
+  # end
 
-  def set_size=(input_size)
-    @size = input_size
-  end
+  # def set_size=(input_size)
+  #   @size = input_size
+  # end
 
-  def size
-    @size
-  end
+  # def size
+  #   @size
+  # end
 
-  def set_material=(input_material)
-    @material = input_material
-  end
+  # def set_material=(input_material)
+  #   @material = input_material
+  # end
 
-  def material
-    @material
-  end
+  # def material
+  #   @material
+  # end
 
 end
 
 tile1 = Tile.new("brown", 12, "marble")
 p tile1
 p tile1.color
-tile1.set_color=("white")
+tile1.color=("white")
 p tile1.color
 p tile1
