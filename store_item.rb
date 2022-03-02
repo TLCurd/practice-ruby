@@ -91,7 +91,7 @@
 # p tile1.color
 # tile1.color=("white")
 # p tile1.color
-# p tile1
+# p tile1      
 
 
 class Tile
@@ -104,11 +104,27 @@ class Tile
     @material = input_options[:material]
   end
 
+  def print_info
+    p "This tile is #{color}, #{size} inches in width, and is made of #{material}."
+  end
+
 end
 
 tile1 = Tile.new(color: "brown", size: 12, material: "marble")
-p tile1
-p tile1.color
-tile1.color=("white")
-p tile1.color
-p tile1
+# p tile1
+# p tile1.color
+# tile1.color=("white")
+# p tile1.color
+# p tile1
+tile1.print_info
+
+# tile2 = {:color => "red", :size => 6, :material => "ceramic"}
+
+tile2 = Tile.new(color: "red", size: 6, material: "ceramic")
+
+# tile3 = {:color => "yellow", :size => 12, :material => "porcelain"}
+
+tile3 = Tile.new(color: "yellow", size: 12, material: "porcelain")
+
+tile2.print_info
+tile3.print_info
