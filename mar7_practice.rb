@@ -25,7 +25,7 @@
 #   i = i + 1
 # end
 
-
+# --------------------------------
 # Operators and Conditionals
 # Create and define a variable ‘count = 0’. Using a loop and the ‘+=’ operator, output the following:
 # 0
@@ -45,6 +45,7 @@
 #   p count
 #   count += 1
 # end 
+# --------------------------------
 
 # Translate the following into ruby code. Run the program to make sure it works:
 # Sam enjoys cooking. Make an array with recipe names to represent the different recipes Sam can cook.
@@ -63,6 +64,7 @@
 #   p "They should see other people"
 # end
 
+# --------------------------------
 # Hashes
 # Create a banking program that asks the user 5 times to enter a first name, last name, and email. This information should be stored as an array of hashes.
 # Each person should automatically be given an account number which is a randomized ten digit number.
@@ -78,7 +80,7 @@
 
 users = []
 
-# 5.times do 
+5.times do 
   person = {}
   puts "Please enter the first name."
   person[:first_name] = gets.chomp
@@ -88,10 +90,15 @@ users = []
   person[:email] = gets.chomp
   person[:account] = 10.times.map{rand(0..9).to_s}.join
   users << person
-  users.each do |user|
-    puts "First name: #{person[:first_name]}"
-    puts "Last name: #{person[:last_name]}"
   end
-# end
+  users.each do |user|
+    puts "First name: #{user[:first_name]}"
+    puts "Last name: #{user[:last_name]}"
+    puts "Email: #{user[:email]}"
+    puts "ACCT #: #{user[:account]}"
+    puts "          "
+end
 
 # p users
+
+
