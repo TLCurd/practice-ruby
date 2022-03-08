@@ -109,19 +109,38 @@
 # 			Group: Sirius Luna
 # 			Group: Severus Draco
 
-# need to create an array within an array
-all = []
-# group = []
-puts "Please enter the number of students in your class."
-number = gets.chomp.to_i / 2
-number.times do
-  group = []
-  2.times do
-    puts "Please enter a student's name."
-    name = gets.chomp
-    group << name
-  end
-  all << group
-end
+# # need to create an array within an array
+# all = []
+# # group = []
+# puts "Please enter the number of students in your class."
+# number = gets.chomp.to_i
+#   if number.even?
+#     number = number / 2  
+#     number.times do
+#       group = []
+#       2.times do
+#         puts "Please enter a student's name."
+#         name = gets.chomp
+#         group << name
+#       end
+#       all << group
+#       puts "Group: #{group}"
+#     end
+#   end
 
-p all
+all = []
+puts "Please enter the number of students in your class."
+number = gets.chomp.to_i
+  if number.even? 
+    number.times do
+      puts "Please enter a student's name."
+      name = gets.chomp
+      all << name
+      end
+      puts "Group: #{group}"
+    end
+  end
+
+
+
+ 
